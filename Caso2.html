@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana_07</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="img/logo-amarillo2.png" alt="logo" height="100px">
+        </header>
+        <h1>
+            CASOS PRACTICOS DE CONDICIONES ANIDADAS
+        </h1>
+        <div id="caso">
+            <img src="img/Caso2.PNG" alt="Caso2">
+        </div>
+        <div id="solucion">
+            <script>
+                //Declaracion de Variables
+                var edad,mensaje;
+
+                //Fase de lectura/escritura
+                edad=parseInt(prompt("Ingrese la edad"));
+                if (edad<=10) {
+                    mensaje="Eres un niño";
+                }
+                  else {
+                    if (edad<18) {
+                        mensaje="Eres un jovencito";
+                    } else {
+                        if (edad<=90) {
+                            mensaje="Eres mayor de edad";
+                        } else {
+                            mensaje="Tienes muchos añor encima";
+                        }
+                    }
+                }
+                //Fase de salida
+                document.write("La edad es: "+edad+"<br>");
+                document.write("RESULTADO: "+mensaje);
+            </script>
+        </div>
+    </main>
+</body>
+</html>

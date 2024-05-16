@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana_07</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="img/logo-amarillo2.png" alt="logo" height="100px">
+        </header>
+        <h1>
+            CASOS PRACTICOS DE CONDICIONES ANIDADAS
+        </h1>
+        <div id="caso">
+            <img src="img/Caso1.PNG" alt="Caso1">
+        </div>
+        <div id="solucion">
+            <script>
+                //Declaracion de Variables
+                var nota1,nota2,nota,prom,resultado;
+
+                //Fase de lectura/escritura
+                nota1=parseInt(prompt("Ingrese la nota 1"))
+                nota2=parseInt(prompt("Ingrese la nota 2"))
+                nota3=parseInt(prompt("Ingrese la nota 3"))
+
+                //Fase de procesamiento de datos
+                prom=(nota1+nota2+nota3)/3;
+
+                if (prom<4) {
+                    resultado="REPROBRADO"
+                } else {
+                    if (prom>=7) {
+                        resultado="PROMOCIONADO"
+                    } else {
+                        Rresultado="REGULAR"
+                    }    
+                }
+
+                //Fase de salida
+                document.write("Nota1: "+nota1+"<br>");
+                document.write("Nota2: "+nota2+"<br>");
+                document.write("Nota3: "+nota3+"<br>");
+                document.write("Promedio: "+prom.toFixed(2)+"<br>");
+                document.write("RESULTADO: "+resultado);
+            </script>
+        </div>
+    </main>
+</body>
+</html>
